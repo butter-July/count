@@ -9,7 +9,7 @@ import (
 func main() {
 	count := 0
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		count += 1
+		count += 2
 		fmt.Fprintf(w, "%d", count)
 	})
 
